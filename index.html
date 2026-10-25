@@ -1,0 +1,1229 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayeshaeman — Website Developer | Beautiful Websites Built to Grow Your Business</title>
+    <meta
+      name="description"
+      content="Ayeshaeman is a freelance website developer building elegant, mobile-friendly, high-converting websites for businesses in the UK and worldwide."
+    />
+    <meta name="author" content="Ayeshaeman" />
+    <meta name="theme-color" content="#0B0B0D" />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ayeshaeman — Website Developer | Beautiful Websites Built to Grow Your Business" />
+    <meta
+      property="og:description"
+      content="I design and build elegant, responsive websites for businesses that want a stronger online presence and a better customer experience."
+    />
+    <meta property="og:image" content="/images/hero-mockup.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ayeshaeman — Website Developer" />
+    <meta
+      name="twitter:description"
+      content="Modern, mobile-friendly websites that help businesses build trust and turn visitors into enquiries."
+    />
+    <meta name="twitter:image" content="/images/hero-mockup.jpg" />
+
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Accessible Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Top Navigation Bar -->
+    <header class="site-header" id="site-header">
+      <div class="header-container">
+        <!-- Zone 1: Single Brand Wordmark -->
+        <a href="index.html" class="brand-link" aria-label="Ayeshaeman Home">
+          <span class="brand-name">Ayeshaeman</span>
+          <span class="brand-tag">Web Developer</span>
+        </a>
+
+        <!-- Zone 2: Navigation Links (Separate Pages) -->
+        <nav class="nav-desktop" aria-label="Primary Navigation">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="portfolio.html" class="nav-link">Portfolio</a>
+          <a href="process.html" class="nav-link">My Process</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Zone 3: Primary Action & Mobile Menu Toggle -->
+        <div class="nav-actions">
+          <a href="contact.html" class="btn-talk btn-talk-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;" aria-hidden="true">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.25-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31z"/>
+            </svg>
+            <span>Let's Talk</span>
+          </a>
+          <button
+            type="button"
+            class="mobile-toggle"
+            id="mobile-menu-btn"
+            aria-label="Toggle mobile menu"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+        <div class="mobile-drawer-inner">
+          <nav class="mobile-nav-links" aria-label="Mobile Navigation">
+            <a href="index.html" class="mobile-link active">Home</a>
+            <a href="services.html" class="mobile-link">Services</a>
+            <a href="portfolio.html" class="mobile-link">Portfolio</a>
+            <a href="process.html" class="mobile-link">My Process</a>
+            <a href="about.html" class="mobile-link">About</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+          </nav>
+          <div class="mobile-cta-wrap">
+            <a href="contact.html" class="btn-gold w-full text-center">Let's Talk on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- HERO SECTION -->
+      <section class="hero-section" id="home">
+        <div class="ambient-glow" aria-hidden="true"></div>
+        <div class="section-container hero-grid">
+          <!-- Left Column: Copy & CTAs -->
+          <div class="hero-content">
+            <div class="hero-kicker">
+              <span class="kicker-line"></span>
+              <span class="kicker-text">FREELANCE WEBSITE DEVELOPER</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Websites That Make Your Business <span class="gold-gradient-text">Stand Out.</span>
+            </h1>
+            
+            <p class="hero-description">
+              I design and build elegant, responsive websites for businesses that want a stronger online presence and a better customer experience.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="portfolio.html" class="btn-gold">View My Work</a>
+              <a href="contact.html" class="btn-outline">Discuss Your Project</a>
+            </div>
+
+            <!-- Highlights Row -->
+            <div class="hero-highlights">
+              <div class="highlight-item">
+                <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+                  <path d="M12 18h.01"/>
+                </svg>
+                <span>Mobile-Friendly Design</span>
+              </div>
+              <div class="highlight-divider" aria-hidden="true">·</div>
+              <div class="highlight-item">
+                <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+                <span>User-Focused Experience</span>
+              </div>
+              <div class="highlight-divider" aria-hidden="true">·</div>
+              <div class="highlight-item">
+                <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <circle cx="12" cy="12" r="6"/>
+                  <circle cx="12" cy="12" r="2"/>
+                </svg>
+                <span>Built for Business Goals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Device Composition Mockup -->
+          <div class="hero-visual">
+            <div class="mockup-frame">
+              <div class="mockup-header-bar">
+                <div class="mockup-dots" aria-hidden="true">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <div class="mockup-address-bar">
+                  <svg class="padlock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                  <span>yourbusiness.com</span>
+                </div>
+                <div class="mockup-status-tag">Multi-Device Preview</div>
+              </div>
+              <div class="mockup-image-wrap">
+                <img
+                  src="/images/hero-mockup.jpg"
+                  alt="Realistic desktop and smartphone responsive website design showcase"
+                  class="mockup-image"
+                  loading="eager"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="mockup-caption">
+                <span>Responsive Design Mockup</span>
+                <span class="caption-separator">·</span>
+                <span>Optimised for Desktop & Mobile</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner Strip Supporting Headline -->
+        <div class="hero-statement-strip">
+          <div class="section-container text-center">
+            <p class="statement-sub">
+              “I create modern, mobile-friendly websites that help businesses build trust, showcase their services and turn visitors into enquiries.”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES OVERVIEW SECTION -->
+      <section class="services-section" id="services">
+        <div class="section-container">
+          <div class="section-header text-center">
+            <span class="section-kicker">WHAT I OFFER</span>
+            <h2 class="section-title">Specialist Services for Growing Businesses</h2>
+            <p class="section-subtitle">
+              Every website is crafted with purpose, clean code, responsive layouts, and simple contact paths that make it effortless for customers to reach you.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <!-- Service 1: Business Website Development -->
+            <div class="service-card" data-service="Business Website Development">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="service-icon" aria-hidden="true">
+                  <rect width="20" height="14" x="2" y="3" rx="2"/>
+                  <line x1="8" x2="16" y1="21" y2="21"/>
+                  <line x1="12" x2="12" y1="17" y2="21"/>
+                </svg>
+              </div>
+              <h3 class="service-name">Business Website Development</h3>
+              <p class="service-description">
+                Professional websites that explain what a business offers and make it easy for potential customers to get in touch.
+              </p>
+              <ul class="service-features" aria-label="Key features">
+                <li>Clear service presentations</li>
+                <li>Fast, accessible page loads</li>
+                <li>Direct contact & enquiry calls-to-action</li>
+              </ul>
+              <button type="button" class="btn-service-action" data-service-target="Business Website Development">
+                <span>Discuss on WhatsApp</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+            </div>
+
+            <!-- Service 2: Beauty Salon Websites -->
+            <div class="service-card" data-service="Beauty Salon Websites">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="service-icon" aria-hidden="true">
+                  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                </svg>
+              </div>
+              <h3 class="service-name">Beauty Salon Websites</h3>
+              <p class="service-description">
+                Elegant websites for beauty salons, makeup artists, hair stylists and beauty professionals wanting to showcase work and capture appointments.
+              </p>
+              <ul class="service-features" aria-label="Key features">
+                <li>Bespoke treatment menus & pricing</li>
+                <li>Visual treatment portfolios & galleries</li>
+                <li>Direct WhatsApp appointment buttons</li>
+              </ul>
+              <button type="button" class="btn-service-action" data-service-target="Beauty Salon Websites">
+                <span>Discuss on WhatsApp</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+            </div>
+
+            <!-- Service 3: Landing Pages -->
+            <div class="service-card" data-service="Landing Pages">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="service-icon" aria-hidden="true">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                  <circle cx="12" cy="12" r="10" class="opacity-20"/>
+                </svg>
+              </div>
+              <h3 class="service-name">Landing Pages</h3>
+              <p class="service-description">
+                Focused landing pages designed to present an offer clearly and encourage visitors to take action without unnecessary distractions.
+              </p>
+              <ul class="service-features" aria-label="Key features">
+                <li>High-clarity value propositions</li>
+                <li>Structured visual hierarchy</li>
+                <li>Prominent conversion-focused CTAs</li>
+              </ul>
+              <button type="button" class="btn-service-action" data-service-target="Landing Pages">
+                <span>Discuss on WhatsApp</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+            </div>
+
+            <!-- Service 4: Website Redesign -->
+            <div class="service-card" data-service="Website Redesign">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="service-icon" aria-hidden="true">
+                  <path d="M3 12a9 9 0 0 1 15-6.7L21 8"/>
+                  <path d="M21 3v5h-5"/>
+                  <path d="M21 12a9 9 0 0 1-15 6.7L3 16"/>
+                  <path d="M3 21v-5h5"/>
+                </svg>
+              </div>
+              <h3 class="service-name">Website Redesign</h3>
+              <p class="service-description">
+                Modernise an outdated website with improved visual design, navigation, responsiveness and usability that reflects your current standard.
+              </p>
+              <ul class="service-features" aria-label="Key features">
+                <li>Modernised layouts and typography</li>
+                <li>Complete mobile & tablet overhaul</li>
+                <li>Smoother user flow & cleaner hierarchy</li>
+              </ul>
+              <button type="button" class="btn-service-action" data-service-target="Website Redesign">
+                <span>Discuss on WhatsApp</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+            </div>
+
+            <!-- Service 5: WhatsApp Booking Integration -->
+            <div class="service-card" data-service="WhatsApp Booking Integration">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="service-icon" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <h3 class="service-name">WhatsApp Booking Integration</h3>
+              <p class="service-description">
+                Add WhatsApp buttons with prefilled enquiry or appointment-request messages so customers can contact the business easily from their phones.
+              </p>
+              <ul class="service-features" aria-label="Key features">
+                <li>Prefilled custom text per service</li>
+                <li>Direct 1-tap mobile booking route</li>
+                <li>Zero complicated customer logins needed</li>
+              </ul>
+              <button type="button" class="btn-service-action" data-service-target="WhatsApp Booking Integration">
+                <span>Discuss on WhatsApp</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+            </div>
+
+            <!-- Service 6: Website Deployment -->
+            <div class="service-card" data-service="Website Deployment">
+              <div class="service-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="service-icon" aria-hidden="true">
+                  <path d="m18 16 4-4-4-4"/>
+                  <path d="m6 8-4 4 4 4"/>
+                  <path d="m14.5 4-5 16"/>
+                </svg>
+              </div>
+              <h3 class="service-name">Website Deployment</h3>
+              <p class="service-description">
+                Help clients publish their website, connect their custom domain, configure SSL security and test the live version across devices.
+              </p>
+              <ul class="service-features" aria-label="Key features">
+                <li>Domain DNS & SSL setup guidance</li>
+                <li>Fast Netlify or static host publishing</li>
+                <li>Pre-launch link & device verification</li>
+              </ul>
+              <button type="button" class="btn-service-action" data-service-target="Website Deployment">
+                <span>Discuss on WhatsApp</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="text-center" style="margin-top: 3rem;">
+            <a href="services.html" class="btn-outline">View Detailed Services Guide &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO SECTION (Featuring Live Netlify Demos) -->
+      <section class="portfolio-section" id="portfolio">
+        <div class="section-container">
+          <div class="section-header text-center">
+            <span class="section-kicker">SELECTED PROJECTS</span>
+            <h2 class="section-title">Design & Development Showcase</h2>
+            <p class="section-subtitle">
+              Live websites and developed concepts demonstrating layout hierarchy, mobile responsiveness, and industry-tailored conversion paths.
+            </p>
+            <div class="transparency-note">
+              <span>Live Demos Available</span>
+              <span class="note-sep">·</span>
+              <span>Click "View Live Demo" below to explore active websites on Netlify.</span>
+            </div>
+          </div>
+
+          <!-- Filter Tabs -->
+          <div class="portfolio-filter" role="tablist" aria-label="Filter portfolio concepts">
+            <button type="button" class="filter-tab active" data-filter="all" role="tab" aria-selected="true">
+              All Projects
+            </button>
+            <button type="button" class="filter-tab" data-filter="salon" role="tab" aria-selected="false">
+              Beauty & Wellness
+            </button>
+            <button type="button" class="filter-tab" data-filter="business" role="tab" aria-selected="false">
+              Business & Corporate
+            </button>
+            <button type="button" class="filter-tab" data-filter="landing" role="tab" aria-selected="false">
+              Landing Pages
+            </button>
+          </div>
+
+          <!-- Project Grid -->
+          <div class="portfolio-grid" id="portfolio-grid">
+            <!-- Project 1: Beauty Salon Website (With Live Netlify Demo!) -->
+            <article class="project-card" data-category="salon" data-project-id="salon">
+              <div class="project-media-wrap">
+                <img
+                  src="/images/portfolio-salon.jpg"
+                  alt="Luna Beauty Studio Salon Website preview showing elegant treatment menu, photography and booking layout"
+                  class="project-img"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="project-overlay">
+                  <button type="button" class="btn-preview-modal" data-modal="salon" aria-label="Inspect Beauty Salon Concept details">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5" aria-hidden="true" style="width:18px;height:18px;">
+                      <path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/>
+                    </svg>
+                    <span>View Concept Details</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="project-category">Beauty & Salon</span>
+                  <span class="meta-dot">·</span>
+                  <span class="project-type">Active Live Demo</span>
+                </div>
+                <h3 class="project-title">Luna Beauty Studio</h3>
+                <p class="project-desc">
+                  An elegant salon website featuring luxury hair, makeup & nail services, treatment gallery, responsive design and WhatsApp appointment requests.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Treatment Menu</span>
+                  <span class="tag">WhatsApp Booking</span>
+                  <span class="tag">Mobile Optimised</span>
+                </div>
+                <div class="project-actions">
+                  <div class="demo-link-holder" data-project="salon">
+                    <a href="https://effulgent-genie-1e75a0.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-live-demo">
+                      <span>View Live Demo</span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;" aria-hidden="true">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="contact.html" class="btn-similar" data-similar-project="Beauty Salon Website">
+                    Discuss a Similar Website
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Aesthetic Clinic Website -->
+            <article class="project-card" data-category="salon" data-project-id="clinic">
+              <div class="project-media-wrap">
+                <img
+                  src="/images/portfolio-clinic.jpg"
+                  alt="Aesthetic Clinic Website Concept preview showing clinical treatment information, consultation requests and practitioner profiles"
+                  class="project-img"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="project-overlay">
+                  <button type="button" class="btn-preview-modal" data-modal="clinic" aria-label="Inspect Aesthetic Clinic Concept details">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5" aria-hidden="true" style="width:18px;height:18px;">
+                      <path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/>
+                    </svg>
+                    <span>View Concept Details</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="project-category">Aesthetics & Clinic</span>
+                  <span class="meta-dot">·</span>
+                  <span class="project-type">Design Concept</span>
+                </div>
+                <h3 class="project-title">Aesthetic Clinic Website</h3>
+                <p class="project-desc">
+                  A clean, professional website concept for a beauty or aesthetics business, with clear service information and contact options.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Clinical Clarity</span>
+                  <span class="tag">Consultation Enquiries</span>
+                  <span class="tag">Trust Layout</span>
+                </div>
+                <div class="project-actions">
+                  <div class="demo-link-holder" data-project="clinic">
+                    <span class="demo-soon-pill">Demo coming soon</span>
+                  </div>
+                  <a href="contact.html" class="btn-similar" data-similar-project="Aesthetic Clinic Website">
+                    Discuss a Similar Website
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Business & Hospitality Website (With Live Netlify Demo!) -->
+            <article class="project-card" data-category="business" data-project-id="business">
+              <div class="project-media-wrap">
+                <img
+                  src="/images/portfolio-business.jpg"
+                  alt="Mughal Hotel Business Website preview showing hotel suites, corporate amenities and reservation routes"
+                  class="project-img"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="project-overlay">
+                  <button type="button" class="btn-preview-modal" data-modal="business" aria-label="Inspect Business Website Concept details">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5" aria-hidden="true" style="width:18px;height:18px;">
+                      <path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/>
+                    </svg>
+                    <span>View Concept Details</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="project-category">Hospitality & Business</span>
+                  <span class="meta-dot">·</span>
+                  <span class="project-type">Active Live Demo</span>
+                </div>
+                <h3 class="project-title">Mughal Hotel & Stays</h3>
+                <p class="project-desc">
+                  A modern hospitality and business website concept designed to establish credibility, showcase amenities, and make it easy for guests to enquire.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Credibility Structure</span>
+                  <span class="tag">Room Overviews</span>
+                  <span class="tag">WhatsApp Reservations</span>
+                </div>
+                <div class="project-actions">
+                  <div class="demo-link-holder" data-project="business">
+                    <a href="https://splendorous-brigadeiros-8cc316.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-live-demo">
+                      <span>View Live Demo</span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;" aria-hidden="true">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="contact.html" class="btn-similar" data-similar-project="Business Website">
+                    Discuss a Similar Website
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: Landing Page -->
+            <article class="project-card" data-category="landing" data-project-id="landing">
+              <div class="project-media-wrap">
+                <img
+                  src="/images/portfolio-landing.jpg"
+                  alt="Focused Landing Page Concept preview with clean headline, feature breakdown and conversion call to action"
+                  class="project-img"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="project-overlay">
+                  <button type="button" class="btn-preview-modal" data-modal="landing" aria-label="Inspect Landing Page Concept details">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5" aria-hidden="true" style="width:18px;height:18px;">
+                      <path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/>
+                    </svg>
+                    <span>View Concept Details</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="project-category">Campaign & Offer</span>
+                  <span class="meta-dot">·</span>
+                  <span class="project-type">Design Concept</span>
+                </div>
+                <h3 class="project-title">Landing Page</h3>
+                <p class="project-desc">
+                  A focused landing-page concept with clear messaging, strong visual hierarchy and prominent calls to action.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Single Conversion Focus</span>
+                  <span class="tag">Zero Distraction</span>
+                  <span class="tag">Speed Optimised</span>
+                </div>
+                <div class="project-actions">
+                  <div class="demo-link-holder" data-project="landing">
+                    <span class="demo-soon-pill">Demo coming soon</span>
+                  </div>
+                  <a href="contact.html" class="btn-similar" data-similar-project="Landing Page">
+                    Discuss a Similar Website
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="text-center" style="margin-top: 3.5rem;">
+            <a href="portfolio.html" class="btn-outline">Explore Full Portfolio Page &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY WORK WITH ME SECTION -->
+      <section class="why-section" id="why-work-with-me">
+        <div class="section-container">
+          <div class="section-header text-center">
+            <span class="section-kicker">DIRECT & HONEST VALUE</span>
+            <h2 class="section-title">Why Work With Me?</h2>
+            <p class="section-subtitle">
+              Building a website should be straightforward, practical, and tailored to what your business actually needs.
+            </p>
+          </div>
+
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <div class="benefit-number">01</div>
+              <h3 class="benefit-title">Customised Designs Aligned With Your Brand</h3>
+              <p class="benefit-text">
+                Every layout is tailored to your business identity, services, and ideal customers—avoiding generic templates that feel disconnected from your work.
+              </p>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-number">02</div>
+              <h3 class="benefit-title">Responsive Layouts for Mobile, Tablet & Desktop</h3>
+              <p class="benefit-text">
+                With over 60% of modern web traffic coming from mobile devices, your site is thoroughly formatted and verified across all screen widths.
+              </p>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-number">03</div>
+              <h3 class="benefit-title">Clear Calls to Action & Easy Contact Options</h3>
+              <p class="benefit-text">
+                Visitors should never have to search for how to reach you. Clear WhatsApp buttons, quick enquiry triggers, and prominent CTAs guide every visitor.
+              </p>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-number">04</div>
+              <h3 class="benefit-title">Straightforward Communication Throughout</h3>
+              <p class="benefit-text">
+                No confusing jargon or vanished freelancers. You work directly with me from the first scoping conversation through to launch day.
+              </p>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-number">05</div>
+              <h3 class="benefit-title">Thorough Testing Before Delivery</h3>
+              <p class="benefit-text">
+                Every link, button, layout breakpoint, and image is verified across major browsers before your site is handed over for review.
+              </p>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-number">06</div>
+              <h3 class="benefit-title">Guidance With Deployment & Domain Connection</h3>
+              <p class="benefit-text">
+                I help you publish your website to fast, secure hosting like Netlify, configure your custom domain name, and ensure everything is live without technical headaches.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FREQUENTLY ASKED QUESTIONS SECTION (Positioned below Why Work With Me) -->
+      <section class="faq-section" id="faq">
+        <div class="section-container">
+          <div class="section-header text-center">
+            <span class="section-kicker">QUESTIONS & ANSWERS</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">
+              Clear, transparent answers about pricing, turnaround timelines, and the web development process.
+            </p>
+          </div>
+
+          <div class="faq-accordion-wrap">
+            <!-- FAQ 1: Pricing -->
+            <div class="faq-item active">
+              <button type="button" class="faq-question-btn" aria-expanded="true">
+                <span>How much does a website cost, and how does payment work?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Every project is priced fairly based on the scope: a focused landing page or small business starter site is significantly more affordable than a comprehensive multi-service website with treatment galleries and WhatsApp booking flows.
+                </p>
+                <p>
+                  I provide an upfront, fixed quotation before any work begins, so there are never hidden costs or unexpected charges. Payments are typically split into milestones (a project deposit to commence planning, and the remaining balance upon final approval prior to live launch).
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 2: Timelines -->
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false">
+                <span>How long does it take from start to launch?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Most business websites and salon sites take between <strong>1 to 3 weeks</strong> from initial discovery to final deployment, depending on the number of pages and how quickly content (photos, treatment menus, service details) is provided.
+                </p>
+                <p>
+                  If you have an urgent deadline or an upcoming grand opening, let me know during our initial WhatsApp chat—fast-tracked projects can often be accommodated.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 3: Development Process -->
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false">
+                <span>What do I need to prepare before we get started?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Don't worry if you don't have everything fully written out! To start, all you need is a basic idea of what services you offer, your logo (if you have one), and any reference websites or photos you like.
+                </p>
+                <p>
+                  I help guide the structure, outline the necessary sections, and assist with clear wording and high-resolution layout aesthetics during our Planning stage.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 4: WhatsApp Integration -->
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false">
+                <span>How does WhatsApp booking and enquiry integration work?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Instead of forcing potential customers to register accounts, remember passwords, or fill out complicated forms, your website includes direct WhatsApp buttons tailored to each service.
+                </p>
+                <p>
+                  When a customer taps <em>"Book on WhatsApp"</em>, it opens WhatsApp on their phone or desktop with a prefilled message (e.g., <em>"Hi, I'd like to book an appointment for Hair Styling on Saturday"</em>). You receive the booking directly in your chat and can confirm instantly.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 5: Domain & Hosting -->
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false">
+                <span>Where will my website be hosted, and will you connect my domain?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  I build lightweight, modern static websites that deploy seamlessly to high-speed global static hosting platforms like <strong>Netlify</strong>. Netlify provides lightning-fast loading speeds, 99.99% uptime, and an automatic free SSL certificate (the secure padlock icon).
+                </p>
+                <p>
+                  I will personally guide you through purchasing or connecting your custom domain (e.g., <code>yourbusiness.com</code>) so everything is live, secure, and running smoothly.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 6: Maintenance & Updates -->
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false">
+                <span>Can I update my prices, services, or photos in the future?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, absolutely. The code is written in clean, well-commented HTML, CSS, and JavaScript with zero bloated frameworks. Updating a price, telephone number, or photo is straightforward, and I am available for ongoing updates or maintenance whenever your business evolves.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MY WORKING PROCESS SECTION -->
+      <section class="process-section" id="process">
+        <div class="section-container">
+          <div class="section-header text-center">
+            <span class="section-kicker">STEP BY STEP</span>
+            <h2 class="section-title">My Working Process</h2>
+            <p class="section-subtitle">
+              A transparent, stress-free path from your initial idea to a published website ready to welcome visitors.
+            </p>
+          </div>
+
+          <div class="process-timeline">
+            <!-- Stage 1 -->
+            <div class="process-step">
+              <div class="step-badge">Stage 1</div>
+              <div class="step-content">
+                <h3 class="step-title">Discovery</h3>
+                <p class="step-desc">
+                  Understand your business, what services you offer, your target customers, and what you want the website to achieve.
+                </p>
+              </div>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="process-step">
+              <div class="step-badge">Stage 2</div>
+              <div class="step-content">
+                <h3 class="step-title">Planning</h3>
+                <p class="step-desc">
+                  Agree on the exact pages, features, visual direction, content requirements, and project timeline before building begins.
+                </p>
+              </div>
+            </div>
+
+            <!-- Stage 3 -->
+            <div class="process-step">
+              <div class="step-badge">Stage 3</div>
+              <div class="step-content">
+                <h3 class="step-title">Design & Build</h3>
+                <p class="step-desc">
+                  Build and customise the website structure, responsive styling, typography, and interactive contact points according to the plan.
+                </p>
+              </div>
+            </div>
+
+            <!-- Stage 4 -->
+            <div class="process-step">
+              <div class="step-badge">Stage 4</div>
+              <div class="step-content">
+                <h3 class="step-title">Review & Test</h3>
+                <p class="step-desc">
+                  Test responsiveness across mobile, tablet, and desktop, check all links, and verify WhatsApp booking buttons.
+                </p>
+              </div>
+            </div>
+
+            <!-- Stage 5 -->
+            <div class="process-step">
+              <div class="step-badge">Stage 5</div>
+              <div class="step-content">
+                <h3 class="step-title">Launch & Handover</h3>
+                <p class="step-desc">
+                  Deploy the approved website to Netlify hosting, connect your custom domain name, and provide all files and guidance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center" style="margin-top: 3rem;">
+            <a href="process.html" class="btn-outline">Read Detailed Project Process Guide &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="about-section" id="about">
+        <div class="section-container about-grid">
+          <div class="about-visual-col">
+            <div class="workspace-card">
+              <div class="workspace-img-wrap">
+                <img
+                  src="/images/about-workspace.jpg"
+                  alt="Minimalist developer workspace with laptop showing website wireframes and warm lighting"
+                  class="workspace-img"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              
+              <!-- Real Photo Placeholder Card -->
+              <div class="profile-placeholder-box">
+                <div class="placeholder-icon-wrap" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="placeholder-icon">
+                    <circle cx="12" cy="8" r="5"/>
+                    <path d="M20 21a8 8 0 0 0-16 0"/>
+                  </svg>
+                </div>
+                <div class="placeholder-text-wrap">
+                  <span class="placeholder-title">Developer Portrait Placeholder</span>
+                  <span class="placeholder-sub">Ready to replace with your real photograph (`public/images/ayeshaeman.jpg`) whenever you wish.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content-col">
+            <div class="hero-kicker">
+              <span class="kicker-line"></span>
+              <span class="kicker-text">ABOUT THE DEVELOPER</span>
+            </div>
+            <h2 class="about-title">Thoughtful Websites for Ambitious Businesses.</h2>
+            
+            <div class="about-body">
+              <p>
+                I'm Ayeshaeman, a website developer focused on creating modern, attractive and practical websites for small businesses and service providers.
+              </p>
+              <p>
+                My approach is simple: understand the business, create a professional online experience, and make it easy for potential customers to take the next step.
+              </p>
+              <p>
+                I aim to deliver websites that combine thoughtful design, clear communication and reliable functionality.
+              </p>
+            </div>
+
+            <div class="about-cta-row">
+              <a href="contact.html" class="btn-gold">Discuss Your Project</a>
+              <a href="about.html" class="btn-outline">Read Full Bio & Standards</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION (WhatsApp & Instagram Only - Email Removed) -->
+      <section class="contact-section" id="contact">
+        <div class="section-container">
+          <div class="section-header text-center">
+            <span class="section-kicker">DIRECT CONTACT</span>
+            <h2 class="section-title">Let's Build Your Website.</h2>
+            <p class="section-subtitle">
+              Have a business idea or need a better website? Tell me a little about your project, and let's discuss how I can help.
+            </p>
+          </div>
+
+          <!-- Direct Channels Grid: WhatsApp & Instagram -->
+          <div class="contact-channels-grid">
+            <!-- WhatsApp Card -->
+            <div class="channel-card channel-featured">
+              <div class="channel-header">
+                <div class="channel-icon-wrap bg-whatsapp">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" aria-hidden="true" style="width:24px;height:24px;">
+                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.25-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31z"/>
+                  </svg>
+                </div>
+                <div class="channel-title-wrap">
+                  <h3 class="channel-name">WhatsApp: 0318 8900639</h3>
+                  <span class="channel-hint">+92 318 8900639 · Instant Chat & Quotations</span>
+                </div>
+              </div>
+              <p class="channel-text">
+                Direct WhatsApp contact on <strong>0318 8900639</strong>. Send a message to discuss your website requirements, get an instant quote, or plan your launch.
+              </p>
+              <div class="channel-cta">
+                <a
+                  href="#"
+                  id="whatsapp-direct-btn"
+                  class="btn-whatsapp-solid w-full text-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;" aria-hidden="true">
+                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.25-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31z"/>
+                  </svg>
+                  <span>Chat on WhatsApp (0318 8900639)</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Instagram Card -->
+            <div class="channel-card">
+              <div class="channel-header">
+                <div class="channel-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-6 h-6" aria-hidden="true" style="width:24px;height:24px;">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                  </svg>
+                </div>
+                <div class="channel-title-wrap">
+                  <h3 class="channel-name">Instagram</h3>
+                  <span class="channel-hint">Connect and view recent design updates</span>
+                </div>
+              </div>
+              <p class="channel-text">
+                Follow my profile or send a direct message to see ongoing visual experiments, client sneak-peeks, and design tips.
+              </p>
+              <div class="channel-cta">
+                <a
+                  href="#"
+                  id="instagram-direct-btn"
+                  class="btn-outline w-full text-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Instagram Profile
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Project Scope Planner / Enquiry Assistant -->
+          <div class="planner-box">
+            <div class="planner-header">
+              <span class="planner-kicker">QUICK ENQUIRY BUILDER</span>
+              <h3 class="planner-title">Customize Your Project Message</h3>
+              <p class="planner-desc">
+                Select your service interest and details below. This tool formats a ready-to-send enquiry so you can message me on WhatsApp with zero friction.
+              </p>
+            </div>
+
+            <form id="project-planner-form" class="planner-form" onsubmit="return false;">
+              <div class="planner-fields-grid">
+                <!-- Service Choice -->
+                <div class="form-group">
+                  <label for="planner-service" class="form-label">Service Required</label>
+                  <select id="planner-service" class="form-select">
+                    <option value="Business Website Development">Business Website Development</option>
+                    <option value="Beauty Salon Websites">Beauty Salon Website</option>
+                    <option value="Landing Pages">Landing Page</option>
+                    <option value="Website Redesign">Website Redesign</option>
+                    <option value="WhatsApp Booking Integration">WhatsApp Booking Integration</option>
+                    <option value="Website Deployment">Website Deployment & Domain Setup</option>
+                  </select>
+                </div>
+
+                <!-- Business Name / Type -->
+                <div class="form-group">
+                  <label for="planner-biz" class="form-label">Your Business Name / Trade</label>
+                  <input
+                    type="text"
+                    id="planner-biz"
+                    class="form-input"
+                    placeholder="e.g. Luna Beauty Studio or Apex Consulting"
+                  />
+                </div>
+
+                <!-- Timeline / Urgency -->
+                <div class="form-group">
+                  <label for="planner-timeline" class="form-label">Target Timeline</label>
+                  <select id="planner-timeline" class="form-select">
+                    <option value="Within the next 2-4 weeks">Within 2–4 weeks</option>
+                    <option value="Next month">Next month</option>
+                    <option value="Exploring ideas for future">Exploring options</option>
+                  </select>
+                </div>
+
+                <!-- Key Requirement / Note -->
+                <div class="form-group">
+                  <label for="planner-notes" class="form-label">Specific Note or Details (Optional)</label>
+                  <input
+                    type="text"
+                    id="planner-notes"
+                    class="form-input"
+                    placeholder="e.g. Need WhatsApp booking button and treatment list"
+                  />
+                </div>
+              </div>
+
+              <!-- Live Preview of Generated Message -->
+              <div class="message-preview-container">
+                <div class="preview-label-bar">
+                  <span class="preview-label">Live Message Preview:</span>
+                  <span class="preview-badge">Ready for WhatsApp</span>
+                </div>
+                <div class="message-preview-text" id="live-message-preview">
+                  Hi Ayeshaeman, I'm interested in a website for my business. Could we discuss my project?
+                </div>
+              </div>
+
+              <!-- Planner Action Buttons -->
+              <div class="planner-actions">
+                <button type="button" class="btn-whatsapp-solid" id="btn-send-planner-whatsapp">
+                  <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;" aria-hidden="true">
+                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.25-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31z"/>
+                  </svg>
+                  <span>Send on WhatsApp</span>
+                </button>
+                <button type="button" class="btn-copy" id="btn-copy-planner-text">
+                  Copy Text
+                </button>
+              </div>
+
+              <p class="form-notice">
+                * Note: This assistant formats your enquiry directly into WhatsApp. No third-party data tracking or slow form waiting.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER (Email Removed) -->
+    <footer class="site-footer">
+      <div class="section-container">
+        <div class="footer-top">
+          <div class="footer-brand-wrap">
+            <span class="footer-brand">Ayeshaeman</span>
+            <span class="footer-title">Website Developer</span>
+            <p class="footer-tagline">
+              Beautiful Websites. Built to Grow Your Business.
+            </p>
+          </div>
+
+          <div class="footer-links-group">
+            <span class="footer-group-title">Navigation</span>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Selected Projects</a></li>
+              <li><a href="process.html">My Process</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-group">
+            <span class="footer-group-title">Services</span>
+            <ul class="footer-links">
+              <li><a href="services.html">Business Websites</a></li>
+              <li><a href="services.html">Beauty Salon Websites</a></li>
+              <li><a href="services.html">Landing Pages</a></li>
+              <li><a href="services.html">Website Redesign</a></li>
+              <li><a href="services.html">WhatsApp Booking</a></li>
+              <li><a href="services.html">Website Deployment</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-group">
+            <span class="footer-group-title">Connect</span>
+            <ul class="footer-links">
+              <li><a href="#" id="footer-whatsapp-link" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+              <li><a href="#" id="footer-instagram-link" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; <span id="current-year">2026</span> Ayeshaeman. All rights reserved.
+          </p>
+          <p class="closing-line">
+            Thoughtful design, clean code, and reliable websites for growing businesses.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BOT WIDGET (Bottom Right Site) -->
+    <div class="whatsapp-widget-container" id="whatsapp-bot-widget">
+      <!-- Chat Box Popup -->
+      <div class="whatsapp-chat-box" id="whatsapp-chat-box" role="dialog" aria-labelledby="chat-agent-title">
+        <div class="chat-box-header">
+          <div class="chat-agent-info">
+            <div class="chat-avatar-wrap">
+              <span>A</span>
+              <span class="chat-avatar-status" aria-label="Online"></span>
+            </div>
+            <div>
+              <div class="chat-agent-name" id="chat-agent-title">Ayeshaeman</div>
+              <div class="chat-agent-status-text">
+                <span style="display:inline-block;width:6px;height:6px;background:#25D366;border-radius:50%;"></span>
+                <span>Online · 0318 8900639</span>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn-close-chat" id="btn-close-chat" aria-label="Close WhatsApp chat">✕</button>
+        </div>
+
+        <div class="chat-box-body">
+          <div class="chat-bubble">
+            <p>Hi! I'm Ayeshaeman. Message me directly on WhatsApp at <strong>0318 8900639</strong>, or pick a quick inquiry below:</p>
+            <span class="chat-bubble-time">Just now</span>
+          </div>
+
+          <div class="chat-quick-title">Quick Inquiries:</div>
+          <div class="chat-quick-actions">
+            <button type="button" class="chat-action-btn" data-prompt="Hi Ayeshaeman, I need a Business Website for my company. Could we discuss details and pricing?">
+              <span>💼 Business Website</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chat-action-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+            <button type="button" class="chat-action-btn" data-prompt="Hi Ayeshaeman, I want a Beauty Salon website with WhatsApp booking integration.">
+              <span>💅 Beauty Salon Website</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chat-action-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+            <button type="button" class="chat-action-btn" data-prompt="Hi Ayeshaeman, what are your pricing packages and development turnaround timelines?">
+              <span>⏱️ Pricing & Timelines</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chat-action-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+            <button type="button" class="chat-action-btn" data-prompt="Hi Ayeshaeman, I have an existing website and would like a modern redesign.">
+              <span>🚀 Website Redesign</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chat-action-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="chat-input-bar">
+          <input
+            type="text"
+            id="chat-bot-input"
+            class="chat-input"
+            placeholder="Type your question..."
+            aria-label="Type your message for WhatsApp"
+          />
+          <button type="button" class="btn-send-chat" id="btn-send-chat" aria-label="Send via WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px;">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Floating Trigger Button -->
+      <button
+        type="button"
+        class="whatsapp-bot-btn"
+        id="whatsapp-bot-btn"
+        aria-label="Open WhatsApp conversation"
+        aria-expanded="false"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.25-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31z"/>
+        </svg>
+        <span class="bot-online-badge"></span>
+      </button>
+    </div>
+
+    <!-- PROJECT DETAILS MODAL / LIGHTBOX -->
+    <div class="project-modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+      <div class="modal-backdrop" id="modal-backdrop"></div>
+      <div class="modal-dialog">
+        <button type="button" class="btn-close-modal" id="btn-close-modal" aria-label="Close project modal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6" aria-hidden="true" style="width:20px;height:20px;">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <div class="modal-content-wrap" id="modal-content">
+          <!-- Populated dynamically by script.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <!-- Vanilla JavaScript Entry Point -->
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>

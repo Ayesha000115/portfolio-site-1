@@ -1,0 +1,22 @@
+# Netlify Configuration for Ayeshaeman Portfolio
+# Static deployment configuration
+
+[build]
+  # When building via Vite
+  publish = "dist"
+  command = "npm run build"
+
+# Security & Cache Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer-when-downgrade"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Asset caching
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
