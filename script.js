@@ -10,11 +10,10 @@
 export const SITE_CONFIG = {
   /**
    * WHATSAPP NUMBER:
-   * Configured with 03188900639 (International wa.me format: 923188900639)
+   * Linked to all WhatsApp buttons (wa.me format: 923188900639)
+   * The number is securely linked to the action buttons while kept unmentioned in public text.
    */
   whatsappNumber: "923188900639",
-  displayPhoneNumber: "0318 8900639",
-  internationalPhoneNumber: "+92 318 8900639",
 
   /**
    * INSTAGRAM URL:
@@ -140,7 +139,7 @@ function initDynamicYear() {
    ========================================================================== */
 function initContactLinks() {
   const defaultMessage =
-    "Hi Ayeshaeman, I'm interested in a website for my business. Could we discuss my project?";
+    "Hi AyeshaEman, I'm interested in a website for my business. Could we discuss my project?";
 
   // WhatsApp link configuration across all pages
   const whatsappBtns = document.querySelectorAll(
@@ -356,7 +355,7 @@ function initPortfolioModal() {
     if (discussBtn) {
       discussBtn.addEventListener("click", () => {
         closeModal();
-        const msg = `Hi Ayeshaeman, I saw your "${data.title}" concept in your portfolio and would like to discuss building a similar website for my business.`;
+        const msg = `Hi AyeshaEman, I saw your "${data.title}" concept in your portfolio and would like to discuss building a similar website for my business.`;
         handleWhatsAppClick(msg);
       });
     }
@@ -421,7 +420,7 @@ function initProjectPlanner() {
     const timeline = timelineSelect.value;
     const notes = notesInput.value.trim();
 
-    let text = `Hi Ayeshaeman, I'm interested in ${service}`;
+    let text = `Hi AyeshaEman, I'm interested in ${service}`;
     if (biz) {
       text += ` for my business "${biz}"`;
     } else {
@@ -477,7 +476,7 @@ function initServiceCardButtons() {
   serviceBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const targetService = btn.getAttribute("data-service-target");
-      const msg = `Hi Ayeshaeman, I would like to discuss your "${targetService}" service for my business.`;
+      const msg = `Hi AyeshaEman, I would like to discuss your "${targetService}" service for my business.`;
       handleWhatsAppClick(msg);
     });
   });
