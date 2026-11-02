@@ -1,32 +1,51 @@
 /* ==========================================================================
-   AYESHAEMAN — PREMIUM WEBSITE DEVELOPER PORTFOLIO
-   Color Palette:
-   - Primary Background: #0B0B0D
-   - Secondary Background: #151518
-   - Gold Accent: #D4AF6A
-   - Gold Light/Hover: #E7C98C
-   - Main Text: #F5F2EB
-   - Secondary Text: #B8B5AE
-   - Borders: #303035
+   ELEVATE DESIGNS — PREMIUM DEVELOPER PORTFOLIO
+   Dark Developer Palette:
+   - Main Background: #030817 (deep midnight navy)
+   - Secondary Background: #070D1C (dark navy)
+   - Section Background: #0B1224
+   - Card Background: #0D1529
+   - Primary Accent: #7655F5 (vibrant purple)
+   - Secondary Accent: #5945D6
+   - Gradient Accent: linear-gradient(135deg, #7655F5, #6845E8)
+   - Primary Text: #F8FAFC (white)
+   - Secondary Text: #A1A9BB (soft grey)
+   - Muted Text: #778198
+   - Borders: #222B40
+   - Hover Accent: #927AFF
    ========================================================================== */
 
 :root {
-  --bg-primary: #0B0B0D;
-  --bg-secondary: #151518;
-  --bg-card: #18181D;
-  --bg-card-hover: #1F1F26;
-  --gold-accent: #D4AF6A;
-  --gold-light: #E7C98C;
-  --gold-dark: #AF8845;
-  --gold-glow: rgba(212, 175, 106, 0.12);
-  --gold-border: rgba(212, 175, 106, 0.35);
+  --bg-primary: #030817;
+  --bg-secondary: #070D1C;
+  --bg-section: #0B1224;
+  --bg-card: #0D1529;
+  --bg-card-hover: #131E38;
+
+  --primary-accent: #7655F5;
+  --secondary-accent: #5945D6;
+  --hover-accent: #927AFF;
+  --gradient-accent: linear-gradient(135deg, #7655F5 0%, #6845E8 100%);
+  --accent-glow: rgba(118, 85, 245, 0.22);
+  --accent-glow-strong: rgba(118, 85, 245, 0.42);
+  --accent-border: rgba(118, 85, 245, 0.4);
+
+  /* Aliases for seamless backward compatibility */
+  --gold-accent: #7655F5;
+  --gold-light: #927AFF;
+  --gold-dark: #5945D6;
+  --gold-glow: rgba(118, 85, 245, 0.22);
+  --gold-border: rgba(118, 85, 245, 0.38);
+
   --whatsapp-green: #25D366;
   --whatsapp-dark: #128C7E;
-  --text-primary: #F5F2EB;
-  --text-secondary: #B8B5AE;
-  --text-muted: #7E7C77;
-  --border-color: #303035;
-  --border-subtle: #24242A;
+
+  --text-primary: #F8FAFC;
+  --text-secondary: #A1A9BB;
+  --text-muted: #778198;
+
+  --border-color: #222B40;
+  --border-subtle: #172138;
 
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-serif: 'Playfair Display', Georgia, serif;
@@ -68,8 +87,8 @@ body {
   position: absolute;
   top: -100px;
   left: 1rem;
-  background: var(--gold-accent);
-  color: #0B0B0D;
+  background: var(--gradient-accent);
+  color: #FFFFFF;
   padding: 0.6rem 1.2rem;
   font-weight: 600;
   border-radius: var(--radius-sm);
@@ -83,7 +102,7 @@ body {
 
 /* Focus States */
 :focus-visible {
-  outline: 2px solid var(--gold-accent);
+  outline: 2px solid var(--primary-accent);
   outline-offset: 3px;
 }
 
@@ -118,7 +137,7 @@ button {
 }
 
 .gold-gradient-text {
-  background: linear-gradient(135deg, #F5F2EB 20%, #D4AF6A 70%, #E7C98C 100%);
+  background: linear-gradient(135deg, #F8FAFC 20%, #7655F5 65%, #927AFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -190,8 +209,8 @@ button {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background-color: var(--gold-accent);
-  color: #0B0B0D;
+  background: var(--gradient-accent);
+  color: #FFFFFF;
   font-weight: 600;
   font-size: 0.925rem;
   padding: 0.75rem 1.6rem;
@@ -199,12 +218,13 @@ button {
   transition: all var(--transition-fast);
   white-space: nowrap;
   flex-shrink: 0;
-  box-shadow: 0 4px 14px rgba(212, 175, 106, 0.2);
+  box-shadow: 0 4px 18px rgba(118, 85, 245, 0.35);
 }
 .btn-gold:hover {
-  background-color: var(--gold-light);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(212, 175, 106, 0.3);
+  background: var(--hover-accent);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(118, 85, 245, 0.5);
 }
 .btn-gold:active {
   transform: translateY(0);
@@ -216,7 +236,7 @@ button {
   justify-content: center;
   gap: 0.55rem;
   background-color: var(--whatsapp-green);
-  color: #0B0B0D;
+  color: #030817;
   font-weight: 700;
   font-size: 0.925rem;
   padding: 0.75rem 1.6rem;
@@ -249,9 +269,10 @@ button {
   flex-shrink: 0;
 }
 .btn-outline:hover {
-  border-color: var(--gold-accent);
-  color: var(--gold-accent);
-  background-color: rgba(212, 175, 106, 0.05);
+  border-color: var(--primary-accent);
+  color: var(--hover-accent);
+  background-color: rgba(118, 85, 245, 0.08);
+  box-shadow: 0 4px 16px rgba(118, 85, 245, 0.15);
   transform: translateY(-1px);
 }
 .btn-outline:active {
@@ -271,7 +292,7 @@ button {
   left: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(11, 11, 13, 0.9);
+  background: rgba(7, 13, 28, 0.94);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-color);
@@ -308,7 +329,7 @@ button {
 .brand-tag {
   font-size: 0.75rem;
   font-weight: 500;
-  color: var(--gold-accent);
+  color: var(--primary-accent);
   letter-spacing: 0.04em;
 }
 
@@ -337,7 +358,7 @@ button {
   color: var(--text-primary);
 }
 .nav-link.active {
-  color: var(--gold-accent);
+  color: var(--primary-accent);
 }
 .nav-link::after {
   content: '';
@@ -346,7 +367,7 @@ button {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--gold-accent);
+  background-color: var(--primary-accent);
   transition: width var(--transition-fast);
 }
 .nav-link:hover::after,
@@ -366,8 +387,8 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: var(--gold-accent);
-  color: #0B0B0D;
+  background: var(--gradient-accent);
+  color: #FFFFFF;
   font-size: 0.85rem;
   font-weight: 700;
   padding: 0.55rem 1.25rem;
@@ -375,10 +396,13 @@ button {
   white-space: nowrap;
   flex-shrink: 0;
   transition: all var(--transition-fast);
+  box-shadow: 0 2px 10px rgba(118, 85, 245, 0.3);
 }
 .btn-talk:hover {
-  background: var(--gold-light);
+  background: var(--hover-accent);
+  color: #FFFFFF;
   transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(118, 85, 245, 0.45);
 }
 
 /* Mobile Hamburger Toggle */
@@ -459,7 +483,7 @@ button {
    ========================================================================== */
 .page-banner {
   padding: 5rem 0 3.5rem 0;
-  background: radial-gradient(circle at top right, rgba(212, 175, 106, 0.07) 0%, transparent 60%), var(--bg-primary);
+  background: radial-gradient(circle at top right, rgba(118, 85, 245, 0.12) 0%, transparent 60%), var(--bg-primary);
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -491,9 +515,9 @@ button {
   position: absolute;
   top: -120px;
   right: 10%;
-  width: 480px;
-  height: 480px;
-  background: radial-gradient(circle, rgba(212, 175, 106, 0.08) 0%, rgba(11, 11, 13, 0) 70%);
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(118, 85, 245, 0.15) 0%, rgba(3, 8, 23, 0) 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -597,7 +621,8 @@ button {
   transition: transform var(--transition-normal), border-color var(--transition-normal);
 }
 .mockup-frame:hover {
-  border-color: var(--gold-border);
+  border-color: var(--primary-accent);
+  box-shadow: 0 20px 48px rgba(118, 85, 245, 0.22);
 }
 
 .mockup-header-bar {
@@ -616,7 +641,7 @@ button {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-color: #38383F;
+  background-color: #222B40;
 }
 .dot:nth-child(1) { background-color: #ED6A5E; }
 .dot:nth-child(2) { background-color: #F5BF4F; }
@@ -636,7 +661,7 @@ button {
 .padlock-icon {
   width: 11px;
   height: 11px;
-  color: var(--gold-accent);
+  color: var(--primary-accent);
 }
 
 .mockup-status-tag {
@@ -647,7 +672,7 @@ button {
 .mockup-image-wrap {
   position: relative;
   aspect-ratio: 16 / 9;
-  background-color: #0E0E12;
+  background-color: var(--bg-card);
   overflow: hidden;
 }
 .mockup-image {
@@ -671,7 +696,7 @@ button {
   color: var(--text-secondary);
 }
 .caption-separator {
-  color: var(--gold-accent);
+  color: var(--primary-accent);
 }
 
 /* Hero Statement Strip */
@@ -686,7 +711,7 @@ button {
   font-family: var(--font-serif);
   font-style: italic;
   font-size: clamp(1.05rem, 1.8vw, 1.35rem);
-  color: #E2DFD8;
+  color: var(--text-primary);
   max-width: 860px;
   margin: 0 auto;
   line-height: 1.6;
@@ -697,7 +722,7 @@ button {
    ========================================================================== */
 .services-section {
   padding: 6rem 0;
-  background-color: var(--bg-primary);
+  background-color: var(--bg-section);
 }
 
 .services-grid {
@@ -723,11 +748,12 @@ button {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  transition: transform var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 .service-card:hover {
   background-color: var(--bg-card-hover);
-  border-color: var(--gold-border);
+  border-color: var(--primary-accent);
+  box-shadow: 0 10px 30px rgba(118, 85, 245, 0.16);
   transform: translateY(-3px);
 }
 
@@ -735,12 +761,12 @@ button {
   width: 52px;
   height: 52px;
   border-radius: var(--radius-sm);
-  background-color: rgba(212, 175, 106, 0.1);
-  border: 1px solid rgba(212, 175, 106, 0.2);
+  background-color: rgba(118, 85, 245, 0.12);
+  border: 1px solid rgba(118, 85, 245, 0.28);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--gold-accent);
+  color: var(--primary-accent);
   margin-bottom: 1.5rem;
 }
 .service-icon {
@@ -781,7 +807,7 @@ button {
   position: absolute;
   left: 0;
   top: -2px;
-  color: var(--gold-accent);
+  color: var(--primary-accent);
   font-size: 1.4rem;
   line-height: 1;
 }
@@ -801,9 +827,9 @@ button {
   transition: all var(--transition-fast);
 }
 .btn-service-action:hover {
-  background-color: rgba(212, 175, 106, 0.08);
-  border-color: var(--gold-accent);
-  color: var(--gold-accent);
+  background-color: rgba(118, 85, 245, 0.1);
+  border-color: var(--primary-accent);
+  color: var(--hover-accent);
 }
 .arrow-icon {
   width: 16px;
@@ -819,7 +845,7 @@ button {
    ========================================================================== */
 .portfolio-section {
   padding: 6rem 0;
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-primary);
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
@@ -849,9 +875,10 @@ button {
   border-color: var(--text-secondary);
 }
 .filter-tab.active {
-  background-color: var(--gold-accent);
-  color: #0B0B0D;
-  border-color: var(--gold-accent);
+  background: var(--gradient-accent);
+  color: #FFFFFF;
+  border-color: var(--primary-accent);
+  box-shadow: 0 4px 14px rgba(118, 85, 245, 0.35);
 }
 
 /* Portfolio Grid */
@@ -873,10 +900,11 @@ button {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform var(--transition-fast), border-color var(--transition-fast);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 .project-card:hover {
-  border-color: var(--gold-border);
+  border-color: var(--primary-accent);
+  box-shadow: 0 10px 32px rgba(118, 85, 245, 0.2);
   transform: translateY(-4px);
 }
 .project-card.is-hidden {
@@ -886,7 +914,7 @@ button {
 .project-media-wrap {
   position: relative;
   aspect-ratio: 4 / 3;
-  background-color: #0F0F13;
+  background-color: var(--bg-secondary);
   overflow: hidden;
 }
 .project-img {
@@ -902,7 +930,7 @@ button {
 .project-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(11, 11, 13, 0.7);
+  background: rgba(3, 8, 23, 0.78);
   backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
@@ -920,15 +948,16 @@ button {
   align-items: center;
   gap: 0.5rem;
   background: var(--text-primary);
-  color: #0B0B0D;
+  color: #030817;
   padding: 0.65rem 1.25rem;
   border-radius: var(--radius-sm);
   font-size: 0.88rem;
   font-weight: 600;
-  transition: transform var(--transition-fast);
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
 }
 .btn-preview-modal:hover {
   transform: scale(1.04);
+  background-color: #FFFFFF;
 }
 
 .project-body {
@@ -946,7 +975,7 @@ button {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--gold-accent);
+  color: var(--primary-accent);
   margin-bottom: 0.6rem;
 }
 .meta-dot {
@@ -979,7 +1008,7 @@ button {
 .tag {
   font-size: 0.78rem;
   color: var(--text-secondary);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(118, 85, 245, 0.06);
   border: 1px solid var(--border-color);
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-sm);
@@ -1018,16 +1047,18 @@ button {
   gap: 0.45rem;
   font-size: 0.82rem;
   font-weight: 700;
-  color: #0B0B0D;
-  background-color: var(--gold-accent);
+  color: #FFFFFF;
+  background: var(--gradient-accent);
   padding: 0.5rem 1rem;
   border-radius: var(--radius-sm);
   transition: all var(--transition-fast);
-  box-shadow: 0 2px 8px rgba(212, 175, 106, 0.25);
+  box-shadow: 0 3px 12px rgba(118, 85, 245, 0.35);
 }
 .btn-live-demo:hover {
-  background-color: var(--gold-light);
+  background: var(--hover-accent);
+  color: #FFFFFF;
   transform: translateY(-1px);
+  box-shadow: 0 5px 18px rgba(118, 85, 245, 0.5);
 }
 
 .btn-similar {
@@ -1046,7 +1077,7 @@ button {
    ========================================================================== */
 .why-section {
   padding: 6rem 0;
-  background-color: var(--bg-primary);
+  background-color: var(--bg-section);
 }
 
 .benefits-grid {
@@ -1072,10 +1103,12 @@ button {
   padding: 2.25rem 2rem;
   display: flex;
   flex-direction: column;
-  transition: border-color var(--transition-fast);
+  transition: border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 .benefit-card:hover {
-  border-color: var(--gold-border);
+  border-color: var(--primary-accent);
+  box-shadow: 0 8px 26px rgba(118, 85, 245, 0.16);
+  transform: translateY(-3px);
 }
 
 .benefit-number {
@@ -1126,11 +1159,12 @@ button {
   transition: border-color var(--transition-fast), background-color var(--transition-fast);
 }
 .faq-item:hover {
-  border-color: rgba(212, 175, 106, 0.3);
+  border-color: rgba(118, 85, 245, 0.4);
 }
 .faq-item.active {
-  border-color: var(--gold-border);
-  background-color: #1A1A20;
+  border-color: var(--primary-accent);
+  background-color: var(--bg-card-hover);
+  box-shadow: 0 4px 20px rgba(118, 85, 245, 0.12);
 }
 
 .faq-question-btn {
@@ -1149,10 +1183,10 @@ button {
   transition: color var(--transition-fast);
 }
 .faq-question-btn:hover {
-  color: var(--gold-accent);
+  color: var(--primary-accent);
 }
 .faq-item.active .faq-question-btn {
-  color: var(--gold-accent);
+  color: var(--hover-accent);
 }
 
 .faq-toggle-icon {
@@ -1170,9 +1204,9 @@ button {
 }
 .faq-item.active .faq-toggle-icon {
   transform: rotate(45deg);
-  background-color: var(--gold-accent);
-  color: #0B0B0D;
-  border-color: var(--gold-accent);
+  background-color: var(--primary-accent);
+  color: #FFFFFF;
+  border-color: var(--primary-accent);
 }
 
 .faq-answer {
@@ -1670,7 +1704,7 @@ button {
   height: 14px;
   border-radius: 50%;
   background-color: #25D366;
-  border: 2px solid #0B0B0D;
+  border: 2px solid var(--bg-primary);
 }
 
 /* Floating Chat Box */
@@ -1705,7 +1739,7 @@ button {
 }
 
 .chat-box-header {
-  background-color: #121217;
+  background-color: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
   padding: 1rem 1.2rem;
   display: flex;
@@ -1722,9 +1756,9 @@ button {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background-color: rgba(212, 175, 106, 0.15);
-  border: 1px solid var(--gold-accent);
-  color: var(--gold-accent);
+  background-color: rgba(118, 85, 245, 0.15);
+  border: 1px solid var(--primary-accent);
+  color: var(--primary-accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1774,11 +1808,11 @@ button {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background: radial-gradient(circle at top right, rgba(37, 211, 102, 0.04) 0%, transparent 70%), #141419;
+  background: var(--bg-card);
 }
 
 .chat-bubble {
-  background-color: #1F1F27;
+  background-color: var(--bg-card-hover);
   border: 1px solid var(--border-color);
   border-radius: 12px 12px 12px 2px;
   padding: 0.85rem 1rem;
@@ -1799,7 +1833,7 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--gold-accent);
+  color: var(--primary-accent);
 }
 
 .chat-quick-actions {
@@ -1841,7 +1875,7 @@ button {
   align-items: center;
   gap: 0.5rem;
   padding: 0.85rem 1.1rem;
-  background-color: #101014;
+  background-color: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
 }
 .chat-input {
@@ -1872,7 +1906,7 @@ button {
    FOOTER (Email Removed)
    ========================================================================== */
 .site-footer {
-  background-color: #08080A;
+  background-color: var(--bg-primary);
   border-top: 1px solid var(--border-color);
   padding-top: 5rem;
   padding-bottom: 3.5rem;
@@ -2015,8 +2049,8 @@ button {
   transition: all var(--transition-fast);
 }
 .btn-close-modal:hover {
-  background-color: var(--gold-accent);
-  color: #0B0B0D;
+  background-color: var(--primary-accent);
+  color: #FFFFFF;
 }
 
 .modal-content-wrap {
@@ -2027,7 +2061,7 @@ button {
   border-radius: var(--radius-md);
   overflow: hidden;
   margin-bottom: 1.5rem;
-  background-color: #0A0A0C;
+  background-color: var(--bg-secondary);
 }
 .modal-img {
   width: 100%;
@@ -2333,6 +2367,46 @@ button {
 }
 
 /* ==========================================================================
+   FADE-IN INTERSECTION OBSERVER SCROLL ANIMATIONS
+   ========================================================================== */
+.fade-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.fade-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Once reveal animation is complete, reset will-change and allow crisp fast hover */
+.fade-reveal.reveal-complete {
+  will-change: auto;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+  transition-delay: 0ms !important;
+}
+
+/* Maintain proper hover lifts for interactive cards */
+.service-card.fade-reveal.is-visible:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold-border);
+}
+
+.project-card.fade-reveal.is-visible:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold-border);
+}
+
+.benefit-card.fade-reveal.is-visible:hover {
+  transform: translateY(-3px);
+  border-color: var(--gold-border);
+}
+
+/* ==========================================================================
    REDUCED MOTION
    ========================================================================== */
 @media (prefers-reduced-motion: reduce) {
@@ -2341,6 +2415,12 @@ button {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+  .fade-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    will-change: auto !important;
   }
 }
 

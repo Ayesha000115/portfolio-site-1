@@ -1,6 +1,6 @@
 /**
  * @license
- * Ayeshaeman — Website Developer Portfolio
+ * Elevate Designs — Website Developer Portfolio
  * Plain JavaScript Implementation (Zero framework dependencies, Netlify static hosting ready)
  */
 
@@ -27,8 +27,8 @@ export const SITE_CONFIG = {
    */
   projectDemos: {
     salon: "https://effulgent-genie-1e75a0.netlify.app",          // Luna Beauty Studio Live Demo
+    clinic: "https://aurasalooon.netlify.app",                     // Aura Salon Live Demo
     business: "https://splendorous-brigadeiros-8cc316.netlify.app", // Mughal Hotel & Business Live Demo
-    clinic: "",                                                    // Demo coming soon
     landing: ""                                                   // Demo coming soon
   }
 };
@@ -56,18 +56,17 @@ const PORTFOLIO_DATA = {
   },
   clinic: {
     id: "clinic",
-    title: "Aesthetic Clinic Website",
-    category: "Aesthetics & Dermatology Concept",
+    title: "Aura Salon Website",
+    category: "Beauty & Salon Live Demo",
     image: "/images/portfolio-clinic.jpg",
     demoUrl: SITE_CONFIG.projectDemos.clinic,
     description:
-      "A clean, professional website concept for a beauty or aesthetics business, with clear service information and contact options. Designed to foster patient trust, outline practitioner credentials, and streamline private consultation requests.",
+      "An elegant, active salon and beauty website featuring hair and beauty services, a service menu, responsive mobile design, and WhatsApp appointment requests.",
     features: [
-      "Medical aesthetic & skincare service categories",
-      "Complimentary consultation enquiry pathways",
-      "Practitioner credentials & medical background showcase",
-      "Transparent treatment process & safety standards",
-      "Clean neutral aesthetic with gold accents for a clinical luxury feel",
+      "Live Netlify production deployment",
+      "Full salon service & treatment pricing showcase",
+      "Direct 1-tap WhatsApp booking routes",
+      "Clean dark navy aesthetic with vibrant purple accents",
       "Fully responsive on smartphones, tablets and desktop screens"
     ]
   },
@@ -122,6 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initFaqAccordion();
   initWhatsAppBot();
   highlightActiveNavPage();
+  initScrollAnimations();
 });
 
 /* ==========================================================================
@@ -139,7 +139,7 @@ function initDynamicYear() {
    ========================================================================== */
 function initContactLinks() {
   const defaultMessage =
-    "Hi AyeshaEman, I'm interested in a website for my business. Could we discuss my project?";
+    "Hi Elevate Designs, I'm interested in a website for my business. Could we discuss my project?";
 
   // WhatsApp link configuration across all pages
   const whatsappBtns = document.querySelectorAll(
@@ -355,7 +355,7 @@ function initPortfolioModal() {
     if (discussBtn) {
       discussBtn.addEventListener("click", () => {
         closeModal();
-        const msg = `Hi AyeshaEman, I saw your "${data.title}" concept in your portfolio and would like to discuss building a similar website for my business.`;
+        const msg = `Hi Elevate Designs, I saw your "${data.title}" concept in your portfolio and would like to discuss building a similar website for my business.`;
         handleWhatsAppClick(msg);
       });
     }
@@ -393,7 +393,7 @@ function initPortfolioModal() {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
       const projName = btn.getAttribute("data-similar-project") || "";
-      const msg = `Hi Ayeshaeman, I'm interested in building a website similar to your "${projName}" portfolio concept. Could we discuss this?`;
+      const msg = `Hi Elevate Designs, I'm interested in building a website similar to your "${projName}" portfolio concept. Could we discuss this?`;
       handleWhatsAppClick(msg);
     });
   });
@@ -420,7 +420,7 @@ function initProjectPlanner() {
     const timeline = timelineSelect.value;
     const notes = notesInput.value.trim();
 
-    let text = `Hi AyeshaEman, I'm interested in ${service}`;
+    let text = `Hi Elevate Designs, I'm interested in ${service}`;
     if (biz) {
       text += ` for my business "${biz}"`;
     } else {
@@ -476,7 +476,7 @@ function initServiceCardButtons() {
   serviceBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const targetService = btn.getAttribute("data-service-target");
-      const msg = `Hi AyeshaEman, I would like to discuss your "${targetService}" service for my business.`;
+      const msg = `Hi Elevate Designs, I would like to discuss your "${targetService}" service for my business.`;
       handleWhatsAppClick(msg);
     });
   });
@@ -627,4 +627,146 @@ function showToast(message) {
   toastTimer = setTimeout(() => {
     toast.classList.remove("show");
   }, 4000);
+}
+
+/* ==========================================================================
+   16. FADE-IN INTERSECTION OBSERVER SCROLL ANIMATIONS
+   ========================================================================== */
+function initScrollAnimations() {
+  // Respect user preference for reduced motion
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    return;
+  }
+
+  // Graceful fallback if IntersectionObserver is not supported
+  if (!("IntersectionObserver" in window)) {
+    return;
+  }
+
+  // Target the main sections: Services, Portfolio, Why Work With Me, Process, About, Contact & FAQ
+  const targetSections = document.querySelectorAll(
+    "#services, #portfolio, #why-work-with-me, #contact, #about, #process, .services-section, .portfolio-section, .why-section, .faq-section, .process-section, .about-section, .contact-section, .hero-section"
+  );
+
+  if (!targetSections.length) return;
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px 0px -40px 0px", // Trigger slightly before scrolling past
+    threshold: 0.08
+  };
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+
+        // Clean up after animation finishes so hover interactions feel instantaneous
+        const handleTransitionEnd = (e) => {
+          if (e.propertyName === "transform" || e.propertyName === "opacity") {
+            entry.target.classList.add("reveal-complete");
+            entry.target.removeEventListener("transitionend", handleTransitionEnd);
+          }
+        };
+        entry.target.addEventListener("transitionend", handleTransitionEnd);
+
+        // Fallback cleanup timer in case transitionend does not fire
+        setTimeout(() => {
+          entry.target.classList.add("reveal-complete");
+        }, 1000);
+
+        obs.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  targetSections.forEach((section) => {
+    // 1. Reveal section headers
+    const headers = section.querySelectorAll(".section-header, .page-header");
+    headers.forEach((header) => {
+      header.classList.add("fade-reveal");
+      observer.observe(header);
+    });
+
+    // 2. Services Section: Reveal individual service cards with subtle staggered column delays
+    const serviceCards = section.querySelectorAll(".service-card");
+    serviceCards.forEach((card, idx) => {
+      card.classList.add("fade-reveal");
+      const delay = (idx % 3) * 90; // 3-column layout stagger
+      card.style.setProperty("--reveal-delay", `${delay}ms`);
+      observer.observe(card);
+    });
+
+    // 3. Portfolio Section: Filter tabs and project cards
+    const filterTabs = section.querySelectorAll(".portfolio-filter");
+    filterTabs.forEach((filter) => {
+      filter.classList.add("fade-reveal");
+      filter.style.setProperty("--reveal-delay", "40ms");
+      observer.observe(filter);
+    });
+
+    const projectCards = section.querySelectorAll(".project-card");
+    projectCards.forEach((card, idx) => {
+      card.classList.add("fade-reveal");
+      const delay = (idx % 2) * 110; // 2-column layout stagger
+      card.style.setProperty("--reveal-delay", `${delay}ms`);
+      observer.observe(card);
+    });
+
+    // 4. Why Work With Me Section: Reveal benefit cards with staggered column delays
+    const benefitCards = section.querySelectorAll(".benefit-card");
+    benefitCards.forEach((card, idx) => {
+      card.classList.add("fade-reveal");
+      const delay = (idx % 3) * 80;
+      card.style.setProperty("--reveal-delay", `${delay}ms`);
+      observer.observe(card);
+    });
+
+    // 5. FAQ and other supportive sections
+    const faqItems = section.querySelectorAll(".faq-item");
+    faqItems.forEach((item, idx) => {
+      item.classList.add("fade-reveal");
+      const delay = Math.min(idx * 60, 300);
+      item.style.setProperty("--reveal-delay", `${delay}ms`);
+      observer.observe(item);
+    });
+
+    const processSteps = section.querySelectorAll(".process-step");
+    processSteps.forEach((step, idx) => {
+      step.classList.add("fade-reveal");
+      const delay = (idx % 4) * 80;
+      step.style.setProperty("--reveal-delay", `${delay}ms`);
+      observer.observe(step);
+    });
+
+    // 6. About Section: Workspace cards and content columns
+    const aboutCards = section.querySelectorAll(".workspace-card, .about-content-col");
+    aboutCards.forEach((card, idx) => {
+      card.classList.add("fade-reveal");
+      const delay = idx * 100;
+      card.style.setProperty("--reveal-delay", `${delay}ms`);
+      observer.observe(card);
+    });
+
+    // 7. Contact Section: Channel cards and Project Planner
+    const contactCards = section.querySelectorAll(".channel-card, .planner-box");
+    contactCards.forEach((card, idx) => {
+      card.classList.add("fade-reveal");
+      const delay = idx * 90;
+      card.style.setProperty("--reveal-delay", `${delay}ms`);
+      observer.observe(card);
+    });
+
+    // 8. Hero mockup frame
+    const heroMockup = section.querySelector(".mockup-frame");
+    if (heroMockup) {
+      heroMockup.classList.add("fade-reveal");
+      heroMockup.style.setProperty("--reveal-delay", "120ms");
+      observer.observe(heroMockup);
+    }
+  });
+
+  // Also observe any elements that manually contain .fade-reveal
+  const manualReveals = document.querySelectorAll(".fade-reveal:not(.is-visible)");
+  manualReveals.forEach((el) => observer.observe(el));
 }
