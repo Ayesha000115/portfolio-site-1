@@ -29,7 +29,7 @@ export const SITE_CONFIG = {
     salon: "https://effulgent-genie-1e75a0.netlify.app",          // Luna Beauty Studio Live Demo
     clinic: "https://aurasalooon.netlify.app",                     // Aura Salon Live Demo
     business: "https://splendorous-brigadeiros-8cc316.netlify.app", // Mughal Hotel & Business Live Demo
-    landing: ""                                                   // Demo coming soon
+    landing: "https://skinclinic11.netlify.app"                    // Skin Clinic Live Demo
   }
 };
 
@@ -89,17 +89,17 @@ const PORTFOLIO_DATA = {
   },
   landing: {
     id: "landing",
-    title: "Landing Page",
-    category: "Campaign & High-Conversion Concept",
+    title: "Skin Clinic",
+    category: "Skin & Aesthetics Live Demo",
     image: "/images/portfolio-landing.jpg",
     demoUrl: SITE_CONFIG.projectDemos.landing,
     description:
-      "A focused landing-page concept with clear messaging, strong visual hierarchy and prominent calls to action. Structured to present a single primary offer clearly without distractions, maximizing enquiry and sign-up conversions.",
+      "A clean, modern skin clinic website featuring dermatology and skincare treatments, clear service information, responsive design, and direct consultation booking options.",
     features: [
-      "Single-minded conversion focus with minimal exit links",
-      "High-clarity value headline and supporting benefits",
-      "Prominent primary and secondary action buttons",
-      "Interactive WhatsApp enquiry trigger for instant questions",
+      "Live Netlify production deployment",
+      "Dedicated skin & aesthetic treatment showcase",
+      "Prominent consultation and enquiry calls to action",
+      "Clean visual hierarchy built for client trust",
       "Lightweight assets for rapid mobile loading",
       "Tested for seamless responsiveness across all screen sizes"
     ]
